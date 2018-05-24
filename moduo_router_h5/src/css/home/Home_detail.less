@@ -1,0 +1,320 @@
+@import '../../common/css/common.less';
+.scrollOwn {
+  margin-top: 0.95rem;
+}
+#iframe {
+  font-size: 0.3rem;
+  text-align: left;
+  width: 100%;
+}
+.detailContent {
+  display: block;
+  overflow: hidden;
+  width: 7.2rem;
+  padding-top: 0.15rem;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  font-size: 0;
+  .more {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    display: inline-block;
+    .source,.time {
+      display: inline-block;
+      font-size: 0.25rem;
+      color: gray;
+    }
+    .source {
+      float: left;
+    }
+    .time {
+      float: right;
+    }
+  }
+  .title {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 0.35rem;
+    font-weight: 700;
+  }
+  .content {
+  }
+}
+#iframe {
+  text-align: justify;
+}
+.commentTip {
+  margin-top: 0.6rem;
+  width: 5.5rem;
+}
+.commentTip2 {
+  margin-top: 0.3rem;
+  width: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+.commentClass {
+
+  background-color: white;
+  img.head {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.8rem;
+    display: block;
+    float: left;
+    margin: 0.2rem;
+  }
+  .rightCom {
+    width: 6rem;
+    float: left;
+    display: block;
+    .commentRow1 {
+      span {
+        color: #222222;
+        display: inline-block;
+        margin-top: 0.2rem;
+        font-size: 0.3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &:first-child {
+          color: grey;
+          font-size: 0.27rem;
+          max-width: 3rem;
+          float: left;
+        }
+        &:last-child {
+          width: 6rem;
+          margin-top: 0.1rem;
+          font-size: 0.25rem;
+          color: grey;
+        }
+      }
+      .level {
+        margin-top: 0.25rem;
+        width: 0.7rem;
+        margin-left: 0.1rem;
+        display: inline-block;
+        float: left;
+      }
+    }
+    .commentRow2 {
+      span {
+        width: 6rem;
+        word-wrap:break-word; word-break:normal;
+        display: inline-block;
+        float: left;
+        text-align: left;
+        font-size: 0.28rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.15rem;
+      }
+    }
+  }
+  .dividerReply {
+    background-color: #eeeeee;
+    margin-top: 0.1rem;
+    margin-bottom: 0.05rem;
+    width: 6.3rem;
+    height: 0.02rem;
+    float: right;
+  }
+  .otherComment {
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    display: inline-block;
+    margin-left:1.2rem;
+    width: 6.2rem;
+    font-size: 0.25rem;
+    text-align: left;
+    .sss {
+      width: 6.1rem;
+      display: inline-block;
+      float: left;
+      margin-top: 0.1rem;
+      font-size: 0.25rem;
+      span {
+        font-size: 0.25rem;
+      }
+    }
+    .fl {
+      display: inline-block;
+      font-size: 0.25rem;
+    }
+    .purple {
+      display: inline-block;
+      color:@purple_color;
+      font-size: 0.25rem;
+    }
+    .moreReply {
+      font-weight: 500;
+      padding-top: 0.05rem;
+      padding-bottom: 0.1rem;
+      display: inline-block;
+      width: 100%;
+      color: rgb(105,189,118);
+      border-top: 0.02rem solid #eeeeee;
+      text-align: center;
+      font-size: 0.25rem;
+    }
+    .gray {
+      display: inline-block;
+      color:grey;
+      font-size: 0.16rem;
+    }
+  }
+  .dividerCom {
+    display: block;
+    float: left;
+    width: 7.5rem;
+    height: 0.02rem;
+    background-color: #eeeeee;
+  }
+}
+.moreComment {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  span {
+    font-size: 0.32rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    width: 3.5rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    border: 0.01rem solid darkgrey;
+    display: inline-block;
+  }
+}
+.titleView {
+  width: 100%;
+  height: 1rem;
+  .purpleLine {
+    width: 100%;
+    height: 0.05rem;
+    background-color: @purple_line_color;
+  }
+  span {
+    display: inline-block;
+    float: left;
+    margin-left: 0.15rem;
+    line-height: 0.9rem;
+    font-size:0.33rem
+  }
+  .titleLine {
+    border-radius: 0.075rem;
+    width: 0.15rem;
+    height: 0.35rem;
+    margin-top: 0.26rem;
+    background-color: @purple_color;
+  }
+}
+.singleImg_type {
+  float: left;
+  width: 100%;
+  height: 1.9rem;
+  background: #fff;
+  //margin-bottom: 0.05rem;
+  .singImg {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin: 0.2rem 0 0.2rem 0.2rem;
+    width: 2.3rem;
+    height: 1.5rem;
+  }
+  h4 {
+    position: relative;
+    text-align: left;
+    float: left;
+    width: 4.8rem;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    height: 1rem;
+    margin-left: 0.1rem;
+    margin-top: 0.13rem;
+    color: #222222;
+    white-space: normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+    display:-webkit-box;
+
+    -webkit-box-orient:vertical;
+
+    -webkit-line-clamp:2;
+  }
+  .time,.observe {
+    display: inline-block;
+    line-height: 0.33rem;
+    color: gray;
+    height: 0.35rem;
+    overflow: hidden;
+    min-width: 0.2rem;
+    max-width: 2rem;
+    margin-top: 0.27rem;
+    font-size: 0.25rem;
+  }
+  .time {
+    float: left;
+    margin-left: 0.14rem;
+  }
+  .observe {
+    background: url("../../assets/Home/community_thumbs.png") no-repeat 0 0;
+    background-size: 0.27rem 0.3rem;
+    text-indent: 0.35rem;
+    float: right;
+    margin-right: 0.14rem;
+  }
+}
+.bottomInput {
+  position: fixed;
+  bottom: 0;
+  width: 7.5rem;
+  height:1rem;
+  background-color: white;
+  border-top: 0.005rem solid #e2e2e2;
+  .inputType {
+    display: block;
+    text-indent: 0.1rem;
+    line-height: 0.59rem;
+    float: left;
+    margin-left:0.14rem;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    width: 6.2rem;
+    height:0.59rem;
+    outline:none;
+    font-size:0.35rem;
+    border-radius: 0.3rem;
+    background-color: @purple_textView_color;
+    span {
+      border-radius: 0.02rem;
+      font-size: 0.3rem;
+      color: #fff;
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+    }
+  }
+  button {
+    display: block;
+    float: left;
+    margin-top: 0.27rem;
+    background: limegreen;
+    border-radius: 0.1rem;
+    line-height: 0.35rem;
+    font-size: 0.3rem;
+    color: gray;
+    width: 0.6rem;
+    height: 0.4rem;
+    background: url("../../assets/Home/comment.png") no-repeat;
+
+    background-size: 0.41rem 0.39rem;
+    text-indent: 0.45rem;
+    border: 0;
+    outline: none;
+  }
+}

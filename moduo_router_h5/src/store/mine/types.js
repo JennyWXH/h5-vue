@@ -1,0 +1,57 @@
+/**
+ * Created by ma on 2017/7/25.
+ */
+export const MINE_FIRST_LOADING = 'MINE_FIRST_LOADING'
+export const MINE_HOME_LOADING = 'MINE_HOME_LOADING'
+export const MINE_ALERT = 'MINE_ALERT'
+export const MINE_ALERT_TITLE = 'MINE_ALERT_TITLE'
+
+//个人中心
+export const MINE_TITLE = 'MINE_TITLE'
+export const MINE_HOME_HEAD = 'MINE_HOME_HEAD'
+export const MINE_HOME_NICKNAME = 'MINE_HOME_NICKNAME'
+export const MINE_HOME_USERDATA = 'MINE_HOME_USERDATA'
+export const MINE_CHANGE_NAME = 'MINE_CHANGE_NAME'
+export const MINE_CHANGE_HEAD = 'MINE_CHANGE_HEAD'
+
+//关系列表
+export const MINE_RELATION_LIST = 'MINE_RELATION_LIST'
+export const MINE_RELATION_TYPE = 'MINE_RELATION_TYPE'
+export const MINE_RELATION_PAGE = 'MINE_RELATION_PAGE'
+
+//我的圈子
+export const MINE_CIRCLE_LIST = 'MINE_CIRCLE_LIST'
+export const MINE_CIRCLE_PAGE = 'MINE_CIRCLE_PAGE'
+//我的帖子与收藏
+export const MINE_POST_TYPE = 'MINE_POST_TYPE'
+export const MINE_POST_LIST = 'MINE_POST_LIST'
+export const MINE_POST_PAGE = 'MINE_POST_PAGE'
+export const MINE_COLLECT_LIST = 'MINE_COLLECT_LIST'
+export const MINE_COLLECT_PAGE = 'MINE_COLLECT_PAGE'
+
+//用户信息
+export const USER_DATA = 'USER_DATA'
+export const USER_ID = 'USER_ID'
+export const USER_POST_LIST = 'USER_POST_LIST'
+export const USER_POST_PAGE = 'USER_POST_PAGE'
+
+export const MINE_POST_ID = 'MINE_POST_ID'
+
+//地址
+export const MINE_ADDRESS_LIST = 'MINE_ADDRESS_LIST'
+export const MINE_ADDRESS_DATA = 'MINE_ADDRESS_DATA'
+export const MINE_ADDRESS_SELECT = 'MINE_ADDRESS_SELECT'
+
+//用户订单
+export const MINE_ORDER_LIST = 'MINE_ORDER_LIST'
+export const MINE_ORDER_PAGE = 'MINE_ORDER_PAGE'
+export const MINE_ORDER_DETAIL = 'MINE_ORDER_DETAIL'
+
+//消息
+export const MINE_NEWS_PRAISE = 'MINE_NEWS_PRAISE'
+export const MINE_NEWS_COMMENT = 'MINE_NEWS_COMMENT'
+export const MINE_NEWS_ATTENTION = 'MINE_NEWS_ATTENTION'
+export const MINE_NEWS_SYSTEM = 'MINE_NEWS_SYSTEM'
+
+//呱币
+export const MINE_COIN_COUNT = 'MINE_COIN_COUNT'

@@ -1,0 +1,116 @@
+@import '../../common/css/common.less';
+.space {
+  .time, .place {
+    background-color: white;
+    width: 100%;
+    height: 1rem;
+    span {
+      font-size: 0.3rem;
+      display: inline-block;
+      text-align: left;
+      float: left;
+    }
+    .t {
+      margin-left: 0.15rem;
+      line-height: 1rem;
+      font-size: 0.3rem;
+      text-align: left;
+      color: darkgray;
+    }
+  }
+  .time {
+    .timeRange {
+      font-size: 0.28rem;
+      margin-top: 0.25rem;
+      line-height: 0.51rem;
+      margin-left: 0.15rem;
+    }
+  }
+  .place {
+    display: flex;
+    align-items:center;
+    .address {
+      width: 6.2rem;
+      font-size: 0.28rem;
+      vertical-align: middle;
+      margin-left: 0.15rem;
+    }
+  }
+  .itemDetail {
+    display: inline-block;
+    background-color: white;
+    width: 7.5rem;
+    font-size: 0;
+    .detailImg {
+      width: 7.1rem;
+      margin-bottom: 0.2rem;
+    }
+    .detailText {
+      font-size: 0.29rem;
+      line-height: 0.41rem;
+      width: 7.1rem;
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+    .moreDetail {
+      width: 4rem;
+      display: inline-block;
+      font-size: 0.3rem;
+      margin-bottom: 0.3rem;
+      color: @purple_color;
+    }
+    .specialNotice {
+      padding-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      background-color: @purple_line_color;
+      .detailText {
+        color: @purple_color;
+      }
+      .line {
+        width: 1.5rem;
+        height: 0.03rem;
+        background-color: @purple_background_color;
+        float: left;
+        margin-top: 0.24rem;
+        &:first-child {
+          margin-left: 1.3rem;
+        }
+      }
+      .title {
+        color: @purple_color;
+        float: left;
+        width: 1.9rem;
+        height: 0.5rem;
+        font-weight: 500;
+        text-align: center;
+        font-size: 0.32rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+}
+
+.buySeat {
+  width: 7.5rem;
+  position: fixed;
+  height: 0.9rem;
+  bottom: -0.01rem;
+  font-size: 0;
+  img {
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    float: left;
+  }
+  span {
+    display: inline-block;
+    float: left;
+    background-color: rgba(109,191,120,1);
+    line-height: 0.98rem;
+    font-size: 0.35rem;
+    width: 6.6rem;
+    color: white;
+    height: 100%;
+  }
+}

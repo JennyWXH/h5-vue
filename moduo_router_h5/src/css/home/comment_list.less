@@ -1,0 +1,187 @@
+@import '../../common/css/common.less';
+.commentTip {
+  margin-top: 0.6rem;
+  width: 5.5rem;
+}
+.commentTip2 {
+  margin-top: 0.3rem;
+  width: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+.commentClass {
+  img.head {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.8rem;
+    display: inline-block;
+    float: left;
+    margin: 0.2rem;
+  }
+  .rightCom {
+    width: 6rem;
+    float: left;
+    display: inline-block;
+    font-size: 0;
+    .commentRow1 {
+      span {
+        display: inline-block;
+        margin-top: 0.2rem;
+        overflow: hidden;
+        color: #222222;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+        float: left;
+        &:first-child {
+          font-size: 0.27rem;
+          max-width: 5rem;
+          color: gray;
+        }
+        &:last-child {
+          color: gray;
+          width: 6rem;
+          margin-top: 0.1rem;
+          font-size: 0.25rem;
+        }
+      }
+      .level {
+        margin-top: 0.2rem;
+        width: 0.7rem;
+        margin-left: 0.1rem;
+        display: inline-block;
+        float: left;
+      }
+    }
+    .commentRow2 {
+      span {
+        width: 6rem;
+        word-wrap:break-word; word-break:normal;
+        display: inline-block;
+        float: left;
+        text-align: left;
+        font-size: 0.28rem;
+        overflow: hidden;
+        color: #222222;
+        margin-bottom: 0.15rem;
+        margin-top: 0.3rem;
+      }
+    }
+    .commentImg {
+      margin-bottom: 0.1rem;
+      img {
+        max-width: 6rem;
+      }
+    }
+  }
+  .dividerCom {
+    display: block;
+    float: left;
+    width: 7.5rem;
+    height: 0.02rem;
+    background-color: #eeeeee;
+  }
+  .dividerReply {
+    background-color: #eeeeee;
+    margin-top: 0.05rem;
+    width: 6.5rem;
+    height: 0.02rem;
+    margin-top: 0.1rem;
+    float: right;
+  }
+  .otherComment {
+    margin-top: 0.2rem;
+    margin-bottom: 0.15rem;
+    display: inline-block;
+    margin-left:1.2rem;
+
+    width: 6.2rem;
+    font-size: 0.25rem;
+    text-align: left;
+    .sss {
+      margin-left: 0.1rem;
+      margin-top: 0.1rem;
+      width: 6.05rem;
+      display: inline-block;
+      float: left;
+      font-size: 0.25rem;
+      span {
+        font-size: 0.25rem;
+      }
+    }
+    .fl {
+      display: inline-block;
+      font-size: 0.25rem;
+    }
+    .purple {
+      display: inline-block;
+      color: @purple_color;
+      font-size: 0.25rem;
+    }
+    .dividerReply {
+      background-color: #eeeeee;
+      margin-top: 0.05rem;
+      margin-bottom: 0.02rem;
+      width: 6.3rem;
+      height: 0rem;
+      float: right;
+    }
+    .moreReply {
+      font-weight: 500;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+      display: inline-block;
+      width: 100%;
+      color: rgba(175,155,252, 1);
+      text-align: center;
+      font-size: 0.25rem;
+      background-color: white;
+    }
+    .gray {
+      display: inline-block;
+      color:grey;
+      font-size: 0.16rem;
+    }
+  }
+}
+
+.bottomInput {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:1rem;
+  background-color: white;
+  border-top: 0.005rem solid #e2e2e2;
+  .inputType {
+    display: block;
+    text-indent: 0.1rem;
+    line-height: 0.59rem;
+    float: left;
+    margin-left:0.1rem;
+    margin-top: 0.2rem;
+    background-color: white;
+    margin-right: 0.1rem;
+    display: block;
+    width: 5.6rem;
+    height:0.59rem;
+    outline:none;
+    border: 0.01rem solid darkgray;
+    font-size:0.35rem;
+    border-radius: 0.3rem;
+    span {
+      font-size: 0.3rem;
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+      margin-left: 0.1rem;
+    }
+  }
+  .commentCount {
+    display: block;
+    float: right;
+    margin-right: 0.1rem;
+    width:1.5rem;
+    font-size: 0.27rem;
+    line-height: 1rem;
+    color: gray;
+  }
+}

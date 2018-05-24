@@ -1,0 +1,143 @@
+/* pages/reward/reward.wxss */
+@import '../../common/css/common.less';
+.backImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 750px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  //background: url("../../assets/reward/reward_get_back.jpg") no-repeat;
+  //background-size: 100% 100%;
+}
+.topView {
+  display: inline-block;
+  width: 7.5rem;
+  height: 8.36rem;
+  img {
+    width: 7.5rem;
+    height: 8.36rem;
+  }
+  .rewardList {
+    position: absolute;
+    overflow: scroll;
+    left: 3.80rem;
+    width: 2.58rem;
+    height: 1.74rem;
+    top: 5.14rem;
+    font-size: 0;
+    background-color: white;
+    .rewardItem {
+      display: inline-block;
+      width: 2.58rem;
+      height: 0.56rem;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        white-space: normal;
+        word-break: keep-all;
+        line-height: 0.28rem;
+        font-size: 0.22rem;
+      }
+      span:first-child {
+        color: @gray_content_color;
+      }
+      span:nth-of-type(2) {
+        color: @default_input_gray_color;
+      }
+      span:last-child {
+        color: @default_name_color;
+      }
+    }
+  }
+}
+.back {
+  display: inline-block;
+  position: relative;
+  background: url("../../assets/reward/Reward_index_back.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 7.5rem;
+  height: 4rem;
+  margin-left: 0;
+  .itemImg{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6rem;
+    height: 3.6rem;
+    top: 0;
+    left: 0.75rem;
+  }
+  .coinView{
+    position: absolute;
+    width: 1rem;
+    height: 0.49rem;
+    top: 0.3rem;
+    left: 0.75rem;
+    .coinImg{
+      position: relative;
+      background: url("../../assets/reward/Reward_coin_back.png") no-repeat;
+      background-size: 100% 100%;
+      width: 1rem;
+      height: 0.49rem;
+      span {
+        position: absolute;
+        font-size: 0.2rem;
+        left: 0.55rem;
+        height: 0.3rem;
+        top: 0.1rem;
+        line-height: 0.3rem;
+        text-align: left;
+        color: white;
+      }
+      .coinIcon{
+        position: absolute;
+        left: 0.14rem;
+        top: 0.10rem;
+        width: 0.28rem;
+        height: 0.28rem;
+      }
+    }
+  }
+  .overView {
+    position: absolute;
+    width: 1.1rem;
+    height: 0.85rem;
+    top: 0.15rem;
+    right: 0.85rem;
+    .overImg{
+      position: relative;
+      width: 1.1rem;
+      height: 0.85rem;
+    }
+  }
+  .titleView {
+    position: absolute;
+    width: 6rem;
+    height: 0.7rem;
+    bottom: 0.4rem;
+    left: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    span{
+      display: inline-block;
+      width: 6rem;
+      left: 0;
+      height: 0.7rem;
+      font-size: 0.35rem;
+      line-height: 0.7rem;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+.moreBack {
+  background: url("../../assets/reward/Reward_index_back.jpg");
+  background-size: 7.5rem 5rem;
+  background-position: 0 0;
+  width: 7.5rem;
+  float: left;
+  height: 0.7rem;
+}

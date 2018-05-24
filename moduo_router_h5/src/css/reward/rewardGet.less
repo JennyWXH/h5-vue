@@ -1,0 +1,307 @@
+@import '../../common/css/common.less';
+.backImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  //background: url("../../assets/reward/reward_get_back.jpg") no-repeat;
+  //background-size: 100% 100%;
+}
+.contentImg {
+  position: relative;
+  width: 100%;
+}
+
+.coinView {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  height: 1rem;
+  width: 7.1rem;
+  .coinIcon{
+    vertical-align: bottom;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .coin, .count{
+    font-weight: 500;
+    color: white;
+    height: 0.5rem;
+    line-height: 0.45rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    font-size: 0.42rem;
+  }
+  .coin {
+    color: @purple_color;
+  }
+  .getCoin {
+    width: 7.1rem;
+    font-weight: 400;
+    font-size: 0.34rem;
+    margin-top: 0.2rem;
+    float: left;
+    color: white;
+    
+  }
+}
+
+.rewardRotate {
+  position: absolute;
+  left: 4.64rem;
+  top: 6.98rem;
+  width: 0.85rem;
+  animation: btnAnimate 1.5s linear 100;
+}
+.rewardDiv {
+  position: absolute;
+  z-index: 100;
+  left: 4.63rem;
+  top: 6.97rem;
+  width: 0.87rem;
+  height: 0.86rem;
+}
+
+.bg-mask {
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+}
+.chouJiang {
+  display: block;
+  position: fixed;
+  top: 20%;
+  left: 0.75rem;
+  //-moz-transform: translate(-50%, -50%);
+  //-ms-transform: translate(-50%, -50%);
+  //-webkit-transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+  z-index: 10001;
+  width: 6rem;
+  height: 6rem;
+  .imgDan {
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    width: 33%;
+    //-moz-transform: translate(-50%, -50%);
+    //-ms-transform: translate(-50%, -50%);
+    //-webkit-transform: translate(-50%, -50%);
+    //transform: translate(-50%, -50%);
+    z-index: 10001;
+    animation: imgDanAnimate 3s linear 100;
+  }
+}
+
+.getReward {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  .rewardBack {
+    position: relative;
+    margin-top: 0.4rem;
+    z-index: 10001;
+    background: url("http://m.imoduo.com/img/reward_have_got.png") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 7rem;
+    .giftImg {
+      position: absolute;
+      top: 2.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3.3rem;
+      height: 2rem;
+    }
+  }
+  .bottom {
+    position: relative;
+    z-index: 10001;
+    .giftName {
+      min-width: 1rem;
+      display: inline-block;
+      color: white;
+      font-size: 0.35rem;
+    }
+    .rewardBtn {
+      margin-top: 0.4rem;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+  }
+  .cancel {
+    position: absolute;
+    top: -0.2rem;
+    right: 0.5rem;
+    width: 0.6rem;
+  }
+
+  .address {
+    width: 7.1rem;
+    margin-left: 0.2rem;
+    position: relative;
+    padding-top: 0.2rem;
+    display: inline-block;
+    z-index: 10001;
+    .line {
+      width: 2.5rem;
+      height: 0.01rem;
+      background-color: white;
+      float: left;
+      margin-top: 0.24rem;
+    }
+    .title {
+      color: white;
+      float: left;
+      width: 1.9rem;
+      height: 0.5rem;
+      text-align: center;
+      font-size: 0.3rem;
+      margin-bottom: 0.2rem;
+    }
+    span {
+      color: white;
+      float: left;
+      width: 6.8rem;
+      display: inline-block;
+      text-align: left;
+      line-height: 0.5rem;
+      font-size: 0.29rem;
+    }
+    .right {
+      position: absolute;
+      top: 1.6rem;
+      transform: translateY(-50%);
+      right: 0.15rem;
+      width: 0.22rem;
+      height: 0.34rem;
+    }
+    .change {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0.5rem;
+      width: 0.6rem;
+      font-size: 0.28rem;
+      color: grey;
+    }
+  }
+}
+
+.getReward .rewardBtn, .noReward .noRewardBack {
+
+  background: url("../../assets/reward/reward_draw_buy.png") no-repeat;
+  background-size: 100%;
+  line-height: 0.9rem;
+  color: white;
+  font-size: 0.35rem;
+  font-weight: 400;
+  border-radius: 0.1rem;
+  top: 8rem;
+  left: 0.3rem;
+  width: 6.9rem;
+  height: 0.9rem;
+}
+
+.noReward {
+  .top {
+    z-index: 10001;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4.5rem;
+    width: 50%;
+  }
+  .noRewardBack {
+    top: 7.5rem;
+    z-index: 10001;
+    position: absolute;
+  }
+}
+
+.bottomTip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.29rem;
+  color: white;
+}
+
+@keyframes btnAnimate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+@keyframes imgDanAnimate {
+  0% {
+    -webkit-transform: translateX(0.1rem) rotate(10deg);
+  }
+  3% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  6% {
+    -webkit-transform: translateX(0.1rem) rotate(10deg);
+  }
+  9% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  12% {
+    -webkit-transform: translateX(0.1rem) rotate(10deg);
+  }
+  15% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  35% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(-0.1rem) rotate(-10deg);
+  }
+  53% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  56% {
+    -webkit-transform: translateX(-0.1rem) rotate(-10deg);
+  }
+  59% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  62% {
+    -webkit-transform: translateX(-0.1rem) rotate(-10deg);
+  }
+  65% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  85% {
+    -webkit-transform: translateX(0rem) rotate(0deg);
+  }
+  100%{
+    -webkit-transform: translateX(0.1rem) rotate(10deg);
+  }
+}

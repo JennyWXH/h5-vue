@@ -1,0 +1,133 @@
+/* pages/reward/detail/detail.wxss */
+@import '../../common/css/common.less';
+.swiper-item {
+  width: 7.5rem;
+  height: 4.5rem;
+  position: relative;
+}
+.swiper-item .slide-image {
+  position: relative;
+  width: 7.5rem;
+  height: 4.5rem;
+}
+.swiper-item span {
+  position: absolute;
+  z-index: 100;
+  top: 0.2rem;
+  color: white;
+
+  padding: 0.15rem 0.24rem 0.15rem 0.24rem;
+  font-size: 0.29rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  right: 0.2rem;
+  line-height: 0.33rem;
+  height: 0.3rem;
+}
+
+.content {
+  margin-left: 0.2rem;
+  margin-top: 0.3rem;
+  width: 7.1rem;
+}
+.content .title{
+  display: inline-block;
+  text-align: left;
+  width: 7.1rem;
+  font-size: 0.38rem;
+  color: @default_text_color;
+  margin-bottom: 0.2rem;
+}
+.content .coinIcon{
+  vertical-align: bottom;
+  margin-top: 0.09rem;
+  float: left;
+  width: 0.38rem;
+  height: 0.38rem;
+}
+.content .coin,.content .count{
+  float: left;
+  color: @default_text_color;
+  line-height: 0.2rem;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  font-size: 0.38rem;
+}
+.content .coin {
+  color: @purple_color;
+}
+
+.luckyView {
+  display: inline-block;
+  margin-top: 0.4rem;
+  width: 7.5rem;
+  height: 1rem;
+  img {
+    float: left;
+    margin-left:0.25rem;
+    width: 1.1rem;
+  }
+
+  .rewardList {
+    display: inline-block;
+    float: left;
+    margin-left: 0.24rem;
+    width: 5.8rem;
+    height: 1.1rem;
+    font-size: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+    .rewardItem {
+      display: inline-block;
+      width: 5.8rem;
+      height: 0.55rem;
+      overflow: hidden;
+
+      span {
+        float: left;
+        display: inline-block;
+        white-space: normal;
+        word-break: keep-all;
+        line-height: 0.5rem;
+        font-size: 0.22rem;
+      }
+      span:first-child {
+        color: @gray_content_color;
+      }
+      span:nth-of-type(2) {
+        color: @default_input_gray_color;
+      }
+      span:last-child {
+        color: @default_name_color;
+      }
+    }
+  }
+}
+
+
+.buySeat {
+  width: 7.4rem;
+  position: fixed;
+  height: 0.9rem;
+  bottom: -0.01rem;
+  font-size: 0;
+  img {
+    display: inline-block;
+    width: 7.5rem;
+    height: 0.9rem;
+    float: left;
+  }
+  span {
+    display: inline-block;
+    font-weight: 700;
+    float: left;
+    background-color: rgba(203, 203, 203, 1);
+    line-height: 0.98rem;
+    font-size: 0.35rem;
+    width: 6.6rem;
+    color: white;
+    height: 100%;
+  }
+}

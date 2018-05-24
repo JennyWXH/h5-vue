@@ -1,0 +1,235 @@
+@import '../../common/css/common.less';
+.moreImg {
+  display: block;
+  position: fixed;
+  width: 0.7rem;
+  height: 0.7rem;
+  right: 0.2rem;
+  top: 0.62rem;
+  z-index: 1000;
+}
+.moreComment {
+  display: inline-block;
+  height: 1rem;
+  width: 7.5rem;
+  img {
+    display: inline-block;
+    margin-top: 0.1rem;
+    width: 6rem;
+  }
+}
+.cateInfo {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255,246,207);
+  .left,.right {
+    color: @purple_color;
+    font-size: 0.25rem;
+    line-height: 0.6rem;
+    font-weight: 500;
+    height: 0.6rem;
+  }
+  .left {
+    float: left;
+    margin-left: 0.2rem;
+  }
+  .right {
+    float: right;
+    margin-right: 0.2rem;
+  }
+}
+.detail_content {
+  .headImg {
+    display: inline-block;
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+  }
+  span {
+    display: inline-block;
+    float: left;
+  }
+  .right {
+    .name, .tip {
+      margin-top: 0.3rem;
+    }
+    .name {
+      line-height: 0.33rem;
+      max-width: 4.3rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: 0.4rem;
+      font-size: 0.3rem;
+    }
+    .level {
+      margin-top: 0.25rem;
+      width: 0.8rem;
+      margin-left: 0.1rem;
+      display: inline-block;
+      float: left;
+    }
+    .tip {
+      height: 0.3rem;
+      font-size: 0.25rem;
+      line-height: 0.32rem;
+      margin-left: 0.1rem;
+      color: white;
+      width: 0.8rem;
+      border-radius: 0.15rem;
+      background-color: @purple_background_color;
+    }
+    .abstract {
+      margin-top: 0.1rem;
+      line-height: 0.4rem;
+      width: 6.0rem;
+      height: 0.4rem;
+      text-align: left;
+      color: gray;
+      font-size: 0.25rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+  .content_text {
+    display: inline-block;
+    .title,.content {
+      margin-top: 0.05rem;
+      margin-left: 0.2rem;
+      width: 7.1rem;
+      text-align: justify;
+    }
+    .title {
+      line-height: 0.35rem;
+      //height: 0.4rem;
+      font-size: 0.28rem;
+      font-weight: 500;
+    }
+    .content {
+      word-break:break-all;
+      margin-top: 0.2rem;
+      line-height: 0.3rem;
+      font-size: 0.25rem;
+    }
+  }
+  .urlLink {
+    margin-top: 0.1rem;
+    .urlView {
+      display: inline-block;
+      width: 6.9rem;
+      height: 1.5rem;
+      background-color: rgba(240, 239, 239, 0.24);
+      img {
+        width: 1.1rem;
+        height: 1.1rem;
+        display: inline-block;
+        float: left;
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
+      }
+      span {
+        display: inline-block;
+        float: left;
+        width: 5.4rem;
+        margin-left: 0.14rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 1.1rem;
+        font-size: 0.3rem;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+  .detail_image {
+    display: block;
+    margin-top: 0.1rem;
+    float: left;
+    img {
+      font-size: 0;
+      display: block;
+      width: 7.3rem;
+      margin-left: 0.1rem;
+      height: auto;
+      margin-top: 0.1rem;
+    }
+  }
+  .favor {
+    display: inline-block;
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 0.6rem;
+    background-color: beige;
+    .outside {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+    .fav1,.fav2,.count {
+      display: inline-block;
+      font-size: 0.27rem;
+    }
+    .count {
+      color: gray;
+    }
+  }
+}
+.bottomInput {
+  position: fixed;
+  bottom: 0;
+  width: 7.5rem;
+  height:0.75rem;
+  font-size: 0;
+  background-color: rgb(244,245,244);
+  border-top: 0.005rem solid #e2e2e2;
+  button {
+    display: block;
+    float: left;
+    border-radius: 0.3rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border: 0;
+    outline: none;
+    //background: url("../../../static/community/favor.png");
+    background-image: url("../../../static/community/favor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;//rgba(61,202,153,1)
+    background-size: 0.4rem 0.4rem;
+  }
+  .inputType {
+    display: inline-block;
+    text-indent: 0.1rem;
+    float: left;
+    margin-left:0.1rem;
+    margin-top: 0.15rem;
+    background-color: white;
+    margin-right: 0.1rem;
+    width: 4.6rem;
+    height:0.45rem;
+    outline:none;
+    font-size: 0;
+    border: 0.01rem solid darkgray;
+    border-radius: 0.3rem;
+    span {
+      font-size: 0.25rem;
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+      line-height: 0.5rem;
+      margin-left: 0.1rem;
+    }
+  }
+  .commentCount {
+    display: block;
+    float: right;
+    margin-right: 0.1rem;
+    width:auto;
+    font-size: 0.27rem;
+    line-height: 0.75rem;
+    color: gray;
+  }
+}
