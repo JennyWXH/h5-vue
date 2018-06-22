@@ -1,0 +1,54 @@
+.top {
+  display: block;
+  margin: 0.2rem auto;
+  width: 3.3rem;
+  height: 1rem;
+  .level,.exp {
+    font-size: 0.35rem;
+    display: inline-block;
+    float: left;
+  }
+  .level {
+    width: 1rem;
+  }
+  .exp {
+    margin-left: 0.3rem;
+    width: 2rem;
+  }
+  .line {
+    width: 100%;
+    height: 0.3rem;
+    img {
+      width: 0.8rem;
+      display: inline-block;
+      float: left;
+    }
+    .imgMove1 {
+      margin-left: 1.9rem;
+      animation: moveLine1 0.1s linear;
+    }
+    .imgMove2 {
+      margin-left: 0.1rem;
+      animation: moveLine2 0.1s linear;
+    }
+  }
+}
+@keyframes moveLine1 {
+  0%{
+    margin-left: 0.1rem;
+  }
+  100%{
+    margin-left: 1.9rem;
+  }
+}
+@keyframes moveLine2 {
+   0%{
+     margin-left: 1.9rem;
+   }
+   100%{
+     margin-left: 0.1rem;
+   }
+}
+.levelRule,.expRule {
+  width: 7rem;
+}

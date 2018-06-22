@@ -1,0 +1,94 @@
+.content {
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(237, 234, 232,1);
+  margin-bottom: 3rem;
+  .left,.right {
+    width: 5rem;
+    margin-top: 0.5rem;
+    img {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      display: inline-block;
+    }
+    span {
+      border-radius: 0.1rem;
+      display: inline-block;
+      line-height: 0.35rem;
+      font-size: 0.3rem;
+      margin-top: 0.1rem;
+      word-wrap:break-word;
+      max-width: 3rem;
+      text-align: left;
+      padding: 0.25rem 0.3rem 0.25rem 0.3rem;
+    }
+  }
+  .left {
+    margin-left: 0.2rem;
+    float: left;
+    img,span {
+      float: left;
+    }
+    img {
+
+    }
+    span {
+      background-color: rgba(149,198,240,1);
+      margin-left:0.2rem;
+    }
+  }
+  .right {
+    margin-right: 0.1rem;
+    float: right;
+    img,span {
+      float: right;
+    }
+    img {
+
+    }
+    span {
+      background-color: rgba(162,229,99,1);
+      margin-right:0.2rem;
+    }
+  }
+}
+
+.bottomInput {
+  position: fixed;
+  bottom: 0;
+  width: 7.5rem;
+  height:1rem;
+  background-color: rgba(228,228,230,0.6);
+  border-top: 0.005rem solid #e2e2e2;
+  .inputType {
+    display: block;
+    position: relative;
+    text-indent: 0.1rem;
+    line-height: 0.59rem;
+    float: left;
+    background-color: white;
+    margin: 0.2rem 0.1rem 0.2rem 0.1rem;
+    width: 6rem;
+    height:0.59rem;
+    outline:none;
+    border: 0.01rem solid darkgray;
+    font-size:0.35rem;
+    border-radius: 0.02rem;
+  }
+  button {
+    display: block;
+    float: left;
+    margin-top: 0.21rem;
+    //margin-right: 0.1rem;
+    background: limegreen;
+    border-radius: 0.1rem;
+    line-height: 0.6rem;
+    font-size: 0.3rem;
+    color: white;
+    width: 1.1rem;
+    height: 0.6rem;
+    border: 0;
+    outline: none;
+  }
+}

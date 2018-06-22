@@ -1,0 +1,32 @@
+/**
+ * Created by ma on 2017/7/25.
+ */
+
+export const HOME_FIRST_LOADING = 'HOME_FIRST_LOADING'
+export const HOME_LOADING = 'HOME_LOADING'
+export const HOME_LOADING_TEXT = 'HOME_LOADING_TEXT'
+export const HOME_ALERT = 'HOME_ALERT'
+export const HOME_ALERT_TITLE = 'HOME_ALERT_TITLE'
+export const HOME_TITLE = 'HOME_TITLE'
+
+export const HOME_SELECT_CODE = 'HOME_SELECT_CODE'
+
+export const HOME_PIC_DATA = 'HOME_PIC_DATA'
+export const HOME_CATE_DATA = 'HOME_CATE_DATA'
+export const HOME_FEATURE_DATA = 'HOME_FEATURE_DATA'
+export const HOME_DATA_LIST = 'HOME_DATA_LIST'
+//是否显示目录//导航条透明度//当前选择目录//当前位置
+export const HOME_CATESTANDARD = 'HOME_CATESTANDARD'
+export const HOME_ALPHA = 'HOME_ALPHA'
+export const HOME_SELECTCODE = 'HOME_SELECTCODE'
+export const HOME_POSITION = 'HOME_POSITION'
+
+
+export const HOME_COMMENT_LIST = 'HOME_COMMENT_LIST'
+export const HOME_DETAIL_DATA = 'HOME_DETAIL_DATA'
+
+//所有评论
+export const HOME_ALL_COMMENT = 'HOME_ALL_COMMENT'
+
+export const HOME_DETAIL_COMMENT = 'HOME_DETAIL_COMMENT'
+export const HOME_DETAIL_COMMENT_DATA = 'HOME_DETAIL_COMMENT_DATA'

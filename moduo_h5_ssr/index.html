@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+  <meta charset='utf-8'>
+  <meta name="keywords" content="麽多，动漫，动漫音乐，动漫歌曲，嘉年华，漫展，二次元，泛娱乐，音乐，日本声优，日本歌手，cosplay，广州动漫展，acg，动漫展，音乐节，日本动漫">
+  <meta name="description" content="麽多是一个专注于日本动漫及动漫歌曲的综合性动漫品牌，目前主要有麽多动漫嘉年华和麽多动漫音乐节两个领域，为二次元用户打造全方位的动漫生活体验。麽多二次元，你的二次元。">
+  <meta name="baidu-site-verification" content="svp46soI2x"/>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="email=no" name="format-detection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta content="email=no" name="format-detection"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="Shortcut Icon" href="/static/favicon.ico" type="image/x-icon" />
+  <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2082558072&debug=true" type="text/javascript" charset="utf-8"></script>-->
+  <title></title>
+
+  <style>
+    html {
+      font-size: 312.5%;
+    }
+  </style>
+
+  <% for (var chunk of webpack.chunks) {
+  for (var file of chunk.files) {
+  if (file.match(/\.(js|css)$/)) { %>
+  <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
+  <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101445043" data-redirecturi="http://jemmyt.hk1.tunnelfrp.cc/auth/qq" charset="utf-8"></script>
+  <script src="https://static.lkme.cc/linkedme.min.js" ></script>
+  <script src="//cdn.bootcss.com/vue/2.2.5/vue.min.js"></script>
+  <script src="//cdn.bootcss.com/vue-router/2.3.0/vue-router.min.js"></script>
+  <script src="//cdn.bootcss.com/vuex/2.2.1/vuex.min.js"></script>
+  <script src="//cdn.bootcss.com/axios/0.15.3/axios.min.js"></script>
+</head>
+<body>
+<!--vue-ssr-outlet-->
+</body>
+</html>
